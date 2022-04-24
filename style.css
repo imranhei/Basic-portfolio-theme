@@ -1,0 +1,339 @@
+body{
+    margin: 0;
+}
+
+/* header */
+
+header{
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(133, 133, 133, 0.25);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+.logo p{
+    padding-right: 5%;
+}
+.logo h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+/* navbar */
+
+.navbar{
+    margin-right: 100px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    margin: 5px 10px;
+}
+.navbar ul a:hover{
+    color: rgb(10, 193, 181);
+}
+.navbar ul li ul{
+    position:absolute;
+    flex-direction: column;
+    display: none;
+}
+.navbar ul li:hover > ul{
+    display: block;
+    background-color: white;
+    
+}
+.navbar ul li a{
+    display: flex;
+    align-items: center;
+}
+.navbar ul li a i{
+    margin-left: 5px;
+}
+.checkbtn{
+    display: none;
+    font-size: 25px;
+    opacity: .5;
+}
+#check{
+    display: none;
+}
+/* section two */
+
+.sectionOne{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    width: 300px;
+    padding: 0% 5%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text h2{
+    color: tomato;
+}
+.text h2 span{
+    font-size: 14px;
+    color: black;
+}
+.text h1{
+    color: rgb(10, 193, 181);
+    font-size: 35px;
+    margin-top: -20px;
+}
+.text p{
+    text-align: justify;
+    margin-top: -20px;
+}
+.propic{
+    padding: 0% 5%;
+}
+.propic img{
+    width: 300px;
+}
+.text input{
+    border: none;
+    padding: 7px 25px;
+    border-radius: 14px;
+    background-image: linear-gradient(35deg, rgb(3, 154, 144), rgb(127, 3, 125));
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.text input:hover{
+    box-shadow: 0px 10px 10px rgba(142, 142, 142, 0.479);
+    transition: all .25s linear;
+    transform: scale(1.02);
+}
+
+/* section three */
+
+.sectionThree{
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.service{
+    padding: 0px 5%;
+}
+.service h1{
+    font-size: 2rem;
+    color: rgb(5, 114, 107);
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.ser1{
+    width: 250px;
+    padding: 10px 20px;
+}
+.ser1 h3{
+    color: rgb(1, 90, 85);
+}
+.ser1 p{
+    color: rgb(86, 86, 86);
+    font-size: 14px;
+}
+.ser1 i{
+    transform: scale(2);
+    color: rgb(10, 193, 181);
+}
+footer{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(1, 56, 53);
+    color: white;
+    width: 100%;
+    justify-content: center;
+    height: fit-content;
+    margin-top: 100px;
+}
+.about{
+    width: 300px;
+    text-align: justify;
+    margin: 20px 5%;
+}
+footer p{
+    font-size: 13px;
+    margin-top: -10px;
+}
+.news{
+    margin: 20px 5%;
+    width: 250px;
+}
+.news div{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+}
+.news div input{
+    border: none;
+    outline: none;
+    width: 200px;
+    padding: 0px 10px;
+}
+
+.news div button{
+    border: none;
+    background-color: rgb(6, 230, 62);
+    cursor: pointer;
+    color: white;
+    width: 35px;
+}
+.news div button:hover{
+    background-color: blue;
+}
+.follow{
+    margin: 20px 5%;
+    width: 120px;
+}
+.follow div{
+    margin-left: -5px;
+}
+.follow div i{
+    margin: 0px 5px;
+}
+.fa-facebook-f:hover{
+    color: rgb(55, 68, 246);
+}
+.fa-twitter:hover{
+    color: rgb(36, 210, 254);
+}
+.fa-instagram:hover{
+    color: rgb(247, 40, 219);
+}
+.fa-youtube:hover{
+    color: rgb(255, 6, 6);
+}
+@media (max-width:1005px) {
+    .navbar ul{
+        flex-direction: column;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .navbar{
+        margin-right: 20px;
+    }
+    .navbar li{
+        display: flex;
+    }
+    header .navbar ul{
+        position: fixed;
+        width: 30%;
+        height: 100vh;
+        background-color: white;
+        top: 54px;
+        left: -130%;
+        transition: all .5s ease-in-out;
+        box-shadow: 0px 10px 10px rgba(119, 119, 119, 0.473);
+    }
+    header .navbar ul a{
+        width: fit-content;
+    }
+    header .navbar ul li{
+        line-height: 25px;
+        clear: both;
+        margin-top: 15px;
+    }
+    .navbar ul li:hover > ul{
+        position: relative;
+        display: flex;
+        left: 50px;
+        height: fit-content;
+        margin-top: -60px;
+        /* width: fit-content; */
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+@media (max-width:720px) {
+    .logo{
+        transform: scale(.8);
+        padding: 0%;
+    }
+    .checkbtn{
+        transform: scale(.8);
+    }
+    .sectionOne{
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        margin-top: 150px;
+    }
+    .text{
+        position: relative;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        margin: 0px 10px 50px 10px;
+        padding: 0;
+        transform: scale(.9);
+    }
+    .propic{
+        padding: 0;
+        width: 100%;
+        margin: auto;
+    }
+    .propic img{
+        width: 60%;
+        position: relative;
+        display: flex;
+        margin: auto;
+    }
+    .res{
+        margin-bottom: 100px;
+    }
+    .text input{
+        transform: scale(.8);
+    }
+    .text input:hover{
+        transform: scale(.82);
+    }
+    .sectionThree{
+        margin-top: -50px;
+    }
+    footer{
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .about, .news, .follow{
+        width: 90%;
+    }
+    .news div input{
+        width: 90%;
+    }
+}
